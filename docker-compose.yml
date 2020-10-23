@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  product-service:
+    build:
+      context: ./hackers-news-node
+    ports:
+      - "4000:4000"
+    networks:
+      - microservices
+  review-service:
+    build:
+      context: ./hackers-news-react
+    ports:
+      - "3000:80"
+    networks:
+      - microservices
+networks:
+  microservices:
+
