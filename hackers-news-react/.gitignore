@@ -1,8 +1,6 @@
 .dockerignore
-*.sh
 yarn.lock
 .gitignore
-Dockerfile
 package-lock.json
 yarn.lock
 .git
